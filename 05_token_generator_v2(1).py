@@ -5,9 +5,9 @@ import random
 STARTING_BALANCE = 100
 
 balance = STARTING_BALANCE
-# Testing loop to generate 20 tokens
-for item in range(0, 100):
-    chosen_num = random.randint(1, 100)
+# Testing loop to generate 10 tokens
+for item in range(0, 10):
+    chosen_num = random.randint(1, 10)
 
     # Adjust the balance
     if 1 <= chosen_num <= 5:
@@ -23,10 +23,11 @@ for item in range(0, 100):
             chosen = "zebra"
         balance -= 0.5
 
+    print("You got a {}.  Your balance is "
+          "${:.2f}".format(chosen, balance))
 
 print()
-print("Starting Balance: ${:.}".format(STARTING_BALANCE))
-print("Final Balance: ${:.}".format(balance))
+
 
 
 
